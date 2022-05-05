@@ -1,0 +1,51 @@
+.expirience {
+  .work-stage-container {
+    max-width: 800px;
+    list-style: none;
+    padding: 20px 0 20px;
+    position: relative;
+    &::before {
+      top: 2px;
+      bottom: 15px;
+      position: absolute;
+      content: " ";
+      width: 3px;
+      background-color: #eeeeee;
+      left: 6%;
+      margin-left: -1.5px;
+    }
+    .work-stage {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      p:first-child {
+        width: 45px;
+        left: 40px;
+        top: calc(50% - 30px);
+        font-size: smaller;
+        position: absolute;
+        word-wrap: break-word;
+      }
+      p:last-child {
+        text-align: justify;
+        margin-left: 25%;
+        
+        &::before {
+          position: absolute;
+          top: 50%;
+          left: 16px;
+          content: " ";
+          display: block;
+          width: 13px;
+          height: 13px;
+          background: #fff;
+          border-radius: 15px;
+          border: 4px solid rgb(126, 152, 217);
+          z-index: 10;
+          outline: 3px solid rgb(220, 227, 245);
+        }
+       
+      }
+    }
+  }
+}

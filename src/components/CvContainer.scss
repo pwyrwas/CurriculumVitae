@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Truculenta');
+body{
+  background-color: whitesmoke;
+  font-family: 'Truculenta';
+}
+.container {
+  display: flex;
+  justify-content: center;
+  
+  //width: 100vh;
+
+  .cv-container {
+    background-color: white;
+    width: 210mm;
+    height: 297mm;
+    display: grid;
+    grid-template-rows: 14% 1fr;
+
+    .header {
+      display: flex;
+      flex-direction: row;
+      background-repeat: no-repeat;
+      background-blend-mode: darken;
+      padding-left: 40px;
+      padding-top: 20px;
+
+      .header__myPhoto {
+        width: 200px;
+        height: 160px;
+        background-image: url("../assets//images//photo.jpg");
+        background-repeat: no-repeat;
+        background-position: -17px -10px;
+
+        border-radius: 150px;
+        box-shadow: rgba(17, 17, 26, 0.2) 0px 4px 16px,
+          rgba(17, 17, 26, 0.2) 0px 8px 24px,
+          rgba(17, 17, 26, 0.2) 0px 16px 56px;
+      }
+
+      .header__intro {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .bodies {
+      grid-row: 2;
+      display: grid;
+      grid-template-columns: 60% 40%;
+      padding: 25px;
+      text-align: center;
+
+      .body-a {
+        grid-column: 1;
+
+       
+      }
+
+      .body-b {
+        grid-column: 2;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+      }
+    }
+  }
+}
